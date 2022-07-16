@@ -1,0 +1,429 @@
+:root {
+    --main-color: #757575;
+    --secondary-color: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #FFFFFF;
+    --logo-color: #000000;
+    --section-bg: #F5F4FA;
+    --hero-footer-bg: #2F303A;
+    --address-color: rgba(255, 255, 255, 0.6);
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+    text-decoration: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    font-style: normal;
+
+    color: var(--main-color);
+    background-color: var(--primary-white-color);
+}
+
+.container {
+    width: 1200px;
+    margin-inline: auto;
+    padding: 0 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto; 
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.section  {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* ============== HEADER =============== */
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+}
+
+.logo {
+    margin-right: 93px;
+
+    text-decoration: inherit;
+    color: var(--logo-color);
+
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo-secondary {
+    color: var(--accent-color);
+}
+
+
+/* site nav styles */
+.menu .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.menu .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    text-decoration: inherit;
+    color: var(--secondary-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.menu .active-list  {
+    color: var(--accent-color);
+}
+
+.menu .link:hover, 
+.menu .link:focus {
+    color: var(--accent-color);
+}
+
+/* header contacts styles */
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contacts .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.contacts .link:hover, 
+.contacts .link:focus {
+    color: var(--accent-color);
+}
+/* ============== /HEADER =============== */
+
+
+/* ============== MAIN =============== */
+
+/* ============== HERO =============== */
+
+.hero {
+    text-align: center;
+    background: var(--hero-footer-bg);
+    padding: 200px 0;
+}
+
+
+
+.hero-title {
+    margin-inline: auto;
+    margin-bottom: 30px;
+    max-width: 700px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+
+.hero .button {
+    padding: 10px 32px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    border: none;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color);
+
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+/* ============== /HERO =============== */
+
+/* ============== section особенности работы =============== */
+.features {
+    display: flex;
+}
+
+.features .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.features .item {
+    flex-basis: calc(100% / 4);
+}
+
+.features-title {
+    margin-bottom: 10px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 1.14;
+    font-size: 14px;
+    text-transform: uppercase;
+    
+    color: var(--secondary-color);
+}
+
+.features-text {
+    line-height: 1.71;
+}
+/* ============== /section особенности работы =============== */
+
+/* ============== section WORK чем мы занимаемсяа =============== */
+.section.work {
+    padding-top: 0;
+}
+
+.title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    
+    color: var(--secondary-color);
+}
+
+.work-list {
+    display: flex;
+}
+
+.work-list .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* ============== /section чем мы занимаемсяа =============== */
+
+/* ============== section TEAM =============== */
+.team {
+    background-color: var(--section-bg);
+}
+
+.team-list {
+    display: flex;
+}
+
+.team-list .item {
+    background-color: var(--primary-white-color) ;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-list .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-box {
+    padding: 30px 10px;
+}
+
+.team-member {
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+}
+
+.team-job {
+    font-size: 16px;
+    line-height: 1.19;
+    
+    text-align: center;
+}
+/* ============== /section TEAM =============== */
+
+/* ==============FOOTER =============== */
+.footer {
+    background: var(--hero-footer-bg);
+    padding: 60px 0;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 30px;
+
+    color: var(--primary-white-color) ;
+}
+
+.text-address {
+    font-style: normal;
+
+    color: var(--primary-white-color);
+}
+
+.footer-contacts {
+    display: block;
+    text-decoration: none;
+    font-style: normal;
+    line-height: 1.71;
+    
+    color: var(--address-color);
+}
+
+.address-list .item:not(:last-child) {
+    margin-bottom: 9px;
+}
+/* ============== /FOOTER =============== */
+
+
+
+/* ============== portfolio.html =============== */
+
+/* ============== BUTTONS КНОПКИ ПОРТФОЛИО =============== */
+.portfolio-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.portfolio-buttons .item:not(:last-child) {
+    margin-right: 8px; 
+}
+
+.portfolio-buttons .button { 
+    padding: 6px 22px;
+
+    background: var(--section-bg);
+    color: var(--secondary-color);
+    border-radius: 4px;
+    border: none;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;  
+    cursor: pointer;
+}
+
+.portfolio-buttons .button:hover, 
+.portfolio-buttons .button:focus {
+    background: var(--accent-color);
+    color: var(--primary-white-color);
+    
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+/* ============== /BUTTONS КНОПКИ ПОРТФОЛИО =============== */
+
+/* ============== ГАЛЕРЕЯ РАБОТ =============== */
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* margin-left: -30px;
+    margin-top: -30px; */
+}
+
+.portfolio-box {
+    padding: 20px 24px;
+}
+
+.portfolio-title {
+    margin-bottom: 4px;
+}
+
+.portfolio-gallery .item  {
+    /* margin-left: 30px;
+    margin-top: 30px; */
+    flex-basis: calc(100% / 3 - 30px);
+}
+
+.portfolio-box {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
+
+.portfolio-title {
+    margin-bottom: 4px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    
+    letter-spacing: 0.06em;
+    
+    color: var(--secondary-color);
+}
+
+.portfolio-text {
+    font-size: 16px;
+    line-height: 1.88;
+    
+}
+/* ============== /ГАЛЕРЕЯ РАБОТ =============== */
