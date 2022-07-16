@@ -168,8 +168,15 @@ img {
 /* ============== HERO =============== */
 
 .hero {
+    height: 600px;
+    max-width: 1600px;
+    margin-inline: auto;
     text-align: center;
-    background: var(--hero-footer-bg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/hero-background.jpg');
+    background-color: #C4C4C4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 200px 0;
 }
 
