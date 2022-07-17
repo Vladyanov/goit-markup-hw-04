@@ -138,6 +138,10 @@ img {
     margin-left: auto;
 }
 
+.contacts .item {
+    display: flex;
+}
+
 .contacts .item:not(:last-child) {
     margin-right: 50px;
 }
@@ -179,8 +183,6 @@ img {
     background-position: center;
     padding: 200px 0;
 }
-
-
 
 .hero-title {
     margin-inline: auto;
@@ -228,6 +230,24 @@ img {
 .features .item {
     flex-basis: calc(100% / 4);
 }
+
+/* .features .item::before{
+    content: '';
+
+    margin-bottom: 30px;
+    display: block;
+
+    height: 120px;
+    background-color: var(--section-bg);
+    border-radius: 4px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list.icon-antenna::before {
+    background-image: url(../images/svg/symbol-defs.svg#antenna);
+} */
 
 .features-title {
     margin-bottom: 10px;
@@ -313,6 +333,9 @@ img {
 }
 /* ============== /section TEAM =============== */
 
+/* ============== section REGULAR CUSTOMERS============= */
+
+/* ============== section REGULAR CUSTOMERS============= */
 /* ==============FOOTER =============== */
 .footer {
     background: var(--hero-footer-bg);
@@ -434,3 +457,4 @@ img {
     
 }
 /* ============== /ГАЛЕРЕЯ РАБОТ =============== */
+                /* < !-- ul.customers>li*6.item>a.icon-container>svg.icon>use --> */
