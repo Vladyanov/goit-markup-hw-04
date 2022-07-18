@@ -140,10 +140,20 @@ img {
 
 .contacts .item {
     display: flex;
+    align-items: center;
+    color: var(--main-color);
 }
 
 .contacts .item:not(:last-child) {
     margin-right: 50px;
+}
+
+.contacts-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    background-size: contain;
+    color: currentColor;
 }
 
 .contacts .link {
@@ -160,9 +170,10 @@ img {
 }
 
 
-.contacts .link:hover, 
-.contacts .link:focus {
+.contacts .item:hover, 
+.contacts .item:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 /* ============== /HEADER =============== */
 
