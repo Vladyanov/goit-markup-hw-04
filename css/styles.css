@@ -138,26 +138,18 @@ img {
     margin-left: auto;
 }
 
-.contacts .item {
-    display: flex;
-    align-items: center;
-    color: var(--main-color);
-}
-
 .contacts .item:not(:last-child) {
     margin-right: 50px;
 }
 
 .contacts-icon {
-    width: 16px;
-    height: 12px;
     margin-right: 10px;
-    background-size: contain;
-    color: currentColor;
+    fill: currentColor;
 }
 
 .contacts .link {
-    display: block;
+    display: inline-flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -176,9 +168,6 @@ img {
     fill: var(--accent-color);
 }
 /* ============== /HEADER =============== */
-
-
-/* ============== MAIN =============== */
 
 /* ============== HERO =============== */
 
@@ -242,23 +231,16 @@ img {
     flex-basis: calc(100% / 4);
 }
 
-/* .features .item::before{
-    content: '';
-
+.features .thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 30px;
-    display: block;
 
     height: 120px;
     background-color: var(--section-bg);
     border-radius: 4px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
-
-.list.icon-antenna::before {
-    background-image: url(../images/svg/symbol-defs.svg#antenna);
-} */
 
 .features-title {
     margin-bottom: 10px;
