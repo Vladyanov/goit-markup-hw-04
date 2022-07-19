@@ -53,6 +53,15 @@ img {
     height: auto; 
 }
 
+ol, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* svg {
+    display: block;
+} */
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -113,6 +122,7 @@ img {
 }
 
 .menu .link {
+    display: inline-block;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -123,12 +133,12 @@ img {
     letter-spacing: 0.02em;
 }
 
-.menu .active-list  {
+.menu .link:hover, 
+.menu .link:focus {
     color: var(--accent-color);
 }
 
-.menu .link:hover, 
-.menu .link:focus {
+.menu .active-list {
     color: var(--accent-color);
 }
 
@@ -150,8 +160,8 @@ img {
 .contacts .link {
     display: inline-flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     font-weight: 500;
     line-height: 1.14;
@@ -162,10 +172,9 @@ img {
 }
 
 
-.contacts .item:hover, 
-.contacts .item:focus {
+.contacts .link:hover, 
+.contacts .link:focus {
     color: var(--accent-color);
-    fill: var(--accent-color);
 }
 /* ============== /HEADER =============== */
 
@@ -232,12 +241,10 @@ img {
 }
 
 .features .thumb {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    padding: 25px 100px;
     margin-bottom: 30px;
 
-    height: 120px;
     background-color: var(--section-bg);
     border-radius: 4px;
 }
@@ -304,7 +311,7 @@ img {
 }
 
 .team-box {
-    padding: 30px 10px;
+    padding: 30px 32px;
 }
 
 .team-member {
@@ -319,25 +326,109 @@ img {
 }
 
 .team-job {
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.19;
     
     text-align: center;
 }
+
+.social-networks {
+    display: inline-flex;
+    align-items: center;
+}
+
+.social-networks .list:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-networks .link {
+    display: block;
+    padding: 12px;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #AFB1B8;
+}
+
+.social-networks .icon {
+    fill: currentColor;
+}
+
+.social-networks .link:hover,
+.social-networks .link:focus {
+    color: var(--primary-white-color);
+    background-color: #2196F3;
+}
+
 /* ============== /section TEAM =============== */
 
 /* ============== section REGULAR CUSTOMERS============= */
 
-/* ============== section REGULAR CUSTOMERS============= */
+.clients {
+    display: flex;
+}
+
+/* .clients .item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px; 
+} */
+
+.clients .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients .icon-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+        
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    color: #AFB1B8;
+}
+
+.clients .icon {
+    fill: currentColor;
+}
+
+.clients .icon-container:hover,
+.clients .icon-container:focus {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+/* ============== /section REGULAR CUSTOMERS============= */
+
 /* ==============FOOTER =============== */
 .footer {
     background: var(--hero-footer-bg);
     padding: 60px 0;
 }
 
+.footer .container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-box {
+    margin-right: 70px;
+    width: 231px;
+}
+
 .footer-logo {
     display: block;
     margin-bottom: 30px;
+    margin-right: 0;
 
     color: var(--primary-white-color) ;
 }
@@ -357,8 +448,26 @@ img {
     color: var(--address-color);
 }
 
+.join-us-title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+
 .address-list .item:not(:last-child) {
     margin-bottom: 9px;
+}
+
+.footer-social-networks {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-networks .icon{
+    color: var(--primary-white-color)
 }
 /* ============== /FOOTER =============== */
 
@@ -423,7 +532,11 @@ img {
 .portfolio-gallery .item  {
     /* margin-left: 30px;
     margin-top: 30px; */
-    flex-basis: calc(100% / 3 - 30px);
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.portfolio-gallery .item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-box {
@@ -438,16 +551,14 @@ img {
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
-    
     letter-spacing: 0.06em;
-    
+        
     color: var(--secondary-color);
 }
 
 .portfolio-text {
     font-size: 16px;
     line-height: 1.88;
-    
 }
 /* ============== /ГАЛЕРЕЯ РАБОТ =============== */
                 /* < !-- ul.customers>li*6.item>a.icon-container>svg.icon>use --> */
