@@ -542,6 +542,7 @@ ol, ul {
 .portfolio-box {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
+    
     border-top: none;
 }
 
@@ -551,8 +552,7 @@ ol, ul {
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
-    letter-spacing: 0.06em;
-        
+    letter-spacing: 0.06em;    
     color: var(--secondary-color);
 }
 
