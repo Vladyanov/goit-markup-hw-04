@@ -386,9 +386,10 @@ ol, ul {
 }
 
 .clients .icon-container {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    padding: 16px 32px;
+    /* justify-content: center;
+    align-items: center; */
         
     border: 1px solid #AFB1B8;
     border-radius: 4px;
