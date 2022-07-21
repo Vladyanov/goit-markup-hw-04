@@ -15,9 +15,9 @@
     margin: 0;
 }
 
-.link {
+/* .link {
     text-decoration: inherit;
-}
+} */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -33,7 +33,7 @@ body {
 
 .container {
     width: 1200px;
-    margin-inline: auto;
+    margin: 0 auto;
     padding: 0 15px;
 }
 
@@ -51,10 +51,6 @@ img {
     display: block;
     max-width: 100%;
     height: auto; 
-}
-
-ol, ul {
-    padding: 0;
 }
 
 .visually-hidden {
@@ -117,7 +113,7 @@ ol, ul {
 }
 
 .menu .link {
-    display: inline-block;
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -153,10 +149,9 @@ ol, ul {
 }
 
 .contacts .link {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
 
     font-weight: 500;
     line-height: 1.14;
@@ -178,7 +173,7 @@ ol, ul {
 .hero {
     height: 600px;
     max-width: 1600px;
-    margin-inline: auto;
+    margin: 0 auto;
     text-align: center;
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/hero-background.jpg');
     background-color: #C4C4C4;
@@ -189,7 +184,7 @@ ol, ul {
 }
 
 .hero-title {
-    margin-inline: auto;
+    margin: 0 auto;
     margin-bottom: 30px;
     max-width: 700px;
 
@@ -236,12 +231,14 @@ ol, ul {
 }
 
 .features .thumb {
-    display: block;
-    padding: 25px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
 
     background-color: var(--section-bg);
     border-radius: 4px;
+    height: 120px;
 }
 
 .features-title {
@@ -329,11 +326,11 @@ ol, ul {
 }
 
 .social-networks {
-    display: inline-flex;
+    display: flex;
     align-items: center;
 }
 
-.social-networks .list:not(:last-child) {
+.social-networks > .list-item:not(:last-child) {
     margin-right: 10px;
 }
 
@@ -371,10 +368,9 @@ ol, ul {
 }
 
 .clients .icon-container {
-    display: block;
-    padding: 16px 32px;
-    /* justify-content: center;
-    align-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
         
     border: 1px solid #AFB1B8;
     border-radius: 4px;
